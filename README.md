@@ -8,4 +8,4 @@ Here, you will apply five different ros packages.
 4. turtlebot_teleop
 5. rviz 
 
-![image](./image.png)
+![image](./images/image1.png)
