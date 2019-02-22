@@ -16,6 +16,7 @@ Here, you will apply five different ros packages.
 1. Building a mobile robot for simulated tasks.
 2. Creating a ROS package that launches a custom robot model in a Gazebo world and utilizes packages like AMCL and the Navigation Stack.
 3. Exploring, adding, and tuning specific parameters corresponding to each package to achieve the best possible localization results.
+
 ![image](./images/my_robot.png)
 ![image](./images/my_start.png)
 ![image](./images/my_end.png)
