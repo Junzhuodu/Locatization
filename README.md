@@ -2,7 +2,7 @@
 
 ## Part I 
 ```
-/Kalman_Filters
+./Kalman_Filters
 ```
 Use EKF filter to do the location for Turtlebot robot.
 
@@ -17,7 +17,7 @@ Here, you will apply five different ros packages.
 
 ## Part II 
 ```
-/udacity_bot
+./udacity_bot
 ```
 1. Building a mobile robot for simulated tasks.
 2. Creating a ROS package that launches a custom robot model in a Gazebo world and utilizes packages like AMCL and the Navigation Stack.
