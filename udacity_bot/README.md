@@ -1,15 +1,13 @@
 
-
 ### Steps to Launch the Simulation
-Launch the simulation in the VM machine provided in Term1. 
 
-#### Step 1 Create a Catkin Workspace
+#### Step 1 Install packages
 ```sh
-$ mkdir -p /home/workspace/catkin_ws/src
-$ cd /home/workspace/catkin_ws/src
-$ catkin_init_workspace
-$ cd ..
-$ catkin_make
+$ sudo apt-get install ros-kinetic-navigation
+$ sudo apt-get install ros-kinetic-map-server
+$ sudo apt-get install ros-kinetic-move-base
+$ rospack profile
+$ sudo apt-get install ros-kinetic-amcl
 ```
 
 #### Step 2 Perform a System Update/Upgrade
@@ -20,34 +18,21 @@ $ apt-get upgrade -y
 
 #### Step 3 Clone the Package in src
 ```sh
-$ cd /home/workspace/catkin_ws/src
-$ git clone https://github.com/udacity/RoboND-EKFLab
+$ cd /home/../catkin_ws/src
+$ git clone https://github.com/Junzhuodu/Locatization/edit/master/udacity_bot
 ```
 
-#### Step 4 Edit the main.launch file
-Under main/launch, edit the main.launch file:
-```html
-Delete this: <node pkg="rviz" type="rviz" name="rviz" args="-d /home/workspace/catkin_ws/src/EKFLab.rviz"/>
-Replace with: <node pkg="rviz" type="rviz" name="rviz" args="-d /home/workspace/catkin_ws/src/RoboND-EKFLab/EKFLab.rviz"/>
-```
-
-#### Step 5 Install Packages Dependancies
-```sh
-$ cd /home/workspace/catkin_ws/
-$ source devel/setup.bash
-$ rosdep -i install turtlebot_gazebo
-$ rosdep -i install turtlebot_teleop
-```
-
-#### Step 6 Build the Packages
+#### Step 4 Build the Packages
 ```sh
 $ catkin_make
 $ source devel/setup.bash
 ```
 
-#### Step 7 Launch the main file
+#### Step 5 Launch the main file
 ```sh
-$ roslaunch main main.launch
+$ roslaunch udacity_bot udacity_world.launch
+$ roslaunch udacity_bot amcl.launch
+rosrun udacity_bot navigation_goal
 ```
 Now, you should see Gazebo and rviz launching. Please note that Gazebo might take up to 3 min to launch! 
 
@@ -56,9 +41,8 @@ Now, you should see Gazebo and rviz launching. Please note that Gazebo might tak
 In the terminal, use the keyboard commands(u-i-o-j-k-l-m-,-.) and drive the robot around. The `red` trajectory represents the `Odom path` whereas the `green` trajectory represents the `EKF path`.
 
 
-![alt text](Outcome.png)
-
-
+![image](./images/my_start.png)
+![image](./images/my_end.png)
 
 
 
