@@ -32,7 +32,7 @@ $ source devel/setup.bash
 ```sh
 $ roslaunch udacity_bot udacity_world.launch
 $ roslaunch udacity_bot amcl.launch
-rosrun udacity_bot navigation_goal
+$ rosrun udacity_bot navigation_goal
 ```
 Now, you should see Gazebo and rviz launching. Please note that Gazebo might take up to 3 min to launch! 
 
