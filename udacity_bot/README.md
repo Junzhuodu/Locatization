@@ -19,7 +19,7 @@ $ apt-get upgrade -y
 #### Step 3 Clone the Package in src
 ```sh
 $ cd /home/../catkin_ws/src
-$ git clone https://github.com/Junzhuodu/Locatization/edit/master/udacity_bot
+$ git clone (../Localization)
 ```
 
 #### Step 4 Build the Packages
