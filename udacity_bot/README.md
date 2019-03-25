@@ -19,7 +19,7 @@ $ apt-get upgrade -y
 #### Step 3 Clone the Package in src
 ```sh
 $ cd /home/../catkin_ws/src
-$ git clone (../Localization)(You just need this file folder)
+$ git clone https://github.com/Junzhuodu/Locatization.git(You just need udacity_bot file folder)
 ```
 
 #### Step 4 Build the Packages
